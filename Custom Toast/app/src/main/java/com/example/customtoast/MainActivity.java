@@ -18,13 +18,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void displayToast(View view) {
 
-        /*Toast mToast;
-        mToast = Toast.makeText(getApplicationContext(), "Welcome to Toaster", Toast.LENGTH_SHORT);
-        mToast.setGravity(Gravity.TOP|Gravity.START, 0, 0);
-        mToast.show();*/
-
-        //Toast.makeText(this, "Test Message", Toast.LENGTH_SHORT).show();
-
         LayoutInflater inflater = getLayoutInflater();
         View customToastLayout = inflater.inflate(R.layout.toast, (ViewGroup) findViewById(R.id.root_layout));
 
