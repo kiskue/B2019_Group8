@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "35421734430",
+    "firebase_url": "https://bscs-b2019-group8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bscs-b2019-group8",
+    "storage_bucket": "bscs-b2019-group8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35421734430:android:d420d3bc40fe3b82c1d00f",
+        "android_client_info": {
+          "package_name": "com.example.subdivisionemergencyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35421734430-8r4amdvq7dng1vuccsm3ub5rj1dbeoo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbI3ddmmfV-qQj4R8YFuOxc-_Dk7NJyRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35421734430-8r4amdvq7dng1vuccsm3ub5rj1dbeoo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

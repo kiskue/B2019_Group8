@@ -5,11 +5,22 @@
       <map>
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/drawable/checkboxsize.xml" value="0.14635416666666667" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/drawable/circle.xml" value="0.14635416666666667" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/drawable/colorprimary.xml" value="0.2703125" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/drawable/ic_send.xml" value="0.28229166666666666" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/drawable/submit.xml" value="0.2703125" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/font/aldrich.xml" value="0.16041666666666668" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_home.xml" value="0.24010416666666667" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main1.xml" value="0.25052083333333336" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
-        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main3.xml" value="0.25416666666666665" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main3.xml" value="0.264" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main4.xml" value="0.25416666666666665" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_register.xml" value="0.25052083333333336" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/activity_user.xml" value="0.13020833333333334" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/menu/drawer_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
