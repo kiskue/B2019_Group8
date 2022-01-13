@@ -11,7 +11,7 @@
     tools:context=".MainActivity3">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/fire"
         android:layout_width="107dp"
         android:layout_height="31dp"
         android:text="FIRE"
@@ -19,11 +19,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/earthquake"
         app:layout_constraintVertical_bias="0.165" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chemicalSpills"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CHEMICAL PILLS"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.141" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/damFailure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DAM FAILURE"
@@ -43,11 +43,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/chemicalSpills"
         app:layout_constraintVertical_bias="0.095" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/earthquake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EARTHQUAKE"
@@ -55,11 +55,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox8"
+        app:layout_constraintTop_toBottomOf="@+id/covidRelated"
         app:layout_constraintVertical_bias="0.124" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/floods"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -69,25 +69,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/fire"
         app:layout_constraintVertical_bias="0.19" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/covidRelated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="5dp"
-        android:text="COVIDRELATED"
+        android:text="COVID RELATED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/damFailure"
         app:layout_constraintVertical_bias="0.097" />
 
     <CheckBox
-        android:id="@+id/checkBox10"
+        android:id="@+id/thunderStorms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -96,26 +96,26 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintStart_toEndOf="@+id/chemicalSpills"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131" />
 
     <CheckBox
-        android:id="@+id/checkBox12"
+        android:id="@+id/robbery"
         android:layout_width="110dp"
         android:layout_height="35dp"
         android:layout_margin="10dp"
         android:padding="5dp"
         android:text="ROBBERY"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.449"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox5"
+        app:layout_constraintStart_toEndOf="@+id/fire"
+        app:layout_constraintTop_toBottomOf="@+id/extremeHeat"
         app:layout_constraintVertical_bias="0.198" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/lossChild"
         android:layout_width="144dp"
         android:layout_height="87dp"
         android:layout_margin="10dp"
@@ -123,13 +123,13 @@
         android:text="LOSS CHILD OR ALZHEIMER FAMILY MEMBER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
-        app:layout_constraintStart_toEndOf="@+id/checkBox6"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox12"
-        app:layout_constraintVertical_bias="0.234" />
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toEndOf="@+id/covidRelated"
+        app:layout_constraintTop_toBottomOf="@+id/robbery"
+        app:layout_constraintVertical_bias="0.1" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/rabies"
         android:layout_width="136dp"
         android:layout_height="38dp"
         android:layout_margin="10dp"
@@ -138,12 +138,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.366"
-        app:layout_constraintStart_toEndOf="@+id/checkBox8"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox11"
+        app:layout_constraintStart_toEndOf="@+id/covidRelated"
+        app:layout_constraintTop_toBottomOf="@+id/needAmbulance"
         app:layout_constraintVertical_bias="0.088" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/extremeHeat"
         android:layout_width="138dp"
         android:layout_height="40dp"
         android:layout_margin="10dp"
@@ -152,12 +152,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox9"
+        app:layout_constraintStart_toEndOf="@+id/earthquake"
+        app:layout_constraintTop_toBottomOf="@+id/rabies"
         app:layout_constraintVertical_bias="0.103" />
 
     <CheckBox
-        android:id="@+id/checkBox11"
+        android:id="@+id/needAmbulance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -166,12 +166,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.605"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox10"
+        app:layout_constraintStart_toEndOf="@+id/damFailure"
+        app:layout_constraintTop_toBottomOf="@+id/thunderStorms"
         app:layout_constraintVertical_bias="0.08" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/confirm_button"
         android:layout_width="84dp"
         android:layout_height="44dp"
         android:background="@drawable/submit"
