@@ -81,10 +81,11 @@ public class MainActivity3 extends AppCompatActivity {
         confirm_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (fire.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Fire checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e1);
+                    member.setEmergency1(e1);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -93,7 +94,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (chemicalSpills.isChecked()){
                 //    Toast.makeText(getApplicationContext(), "Chemical Spills checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e2);
+                    member.setEmergency2(e2);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -102,7 +103,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (damFailure.isChecked()){
                 //    Toast.makeText(getApplicationContext(), "Dam Failure checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e3);
+                    member.setEmergency3(e3);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -111,7 +112,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (earthquake.isChecked()){
                 //    Toast.makeText(getApplicationContext(), "Earthquake checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e4);
+                    member.setEmergency4(e4);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -120,7 +121,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (floods.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Flood checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e5);
+                    member.setEmergency5(e5);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -129,7 +130,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (covidRelated.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Covid checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e6);
+                    member.setEmergency6(e6);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -138,7 +139,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (thunderstorms.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Thunderstorms checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e7);
+                    member.setEmergency7(e7);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -147,7 +148,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (robbery.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Robbery checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e8);
+                    member.setEmergency8(e8);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -156,7 +157,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (lossChild.isChecked()){
                 //    Toast.makeText(getApplicationContext(), "Loss child checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e9);
+                    member.setEmergency9(e9);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
 
@@ -167,7 +168,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (rabies.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Rabies checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e10);
+                    member.setEmergency10(e10);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -176,7 +177,7 @@ public class MainActivity3 extends AppCompatActivity {
                 if (extremeHeat.isChecked()){
                  //   Toast.makeText(getApplicationContext(), "Extreme Heat checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e11);
+                    member.setEmergency11(e11);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
@@ -185,12 +186,13 @@ public class MainActivity3 extends AppCompatActivity {
                 if (needAmbulance.isChecked()){
                   //  Toast.makeText(getApplicationContext(), "Need Ambulance checked", Toast.LENGTH_SHORT).show();
 
-                    member.setEmergency(e12);
+                    member.setEmergency12(e12);
                     reference.child(String.valueOf(i+1)).setValue(member);
 
                 }else {
 
                 }
+
             }
         });
     }
