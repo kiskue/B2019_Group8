@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                         updateUI(user);
 
                     }else{
-                        user.sendEmailVerification();//(CodeWithMazn, 2020)
+                        user.sendEmailVerification();
                         Toast.makeText(MainActivity.this, "Verification email sent! Please check email!", Toast.LENGTH_LONG).show();
                     }
                 }else {
