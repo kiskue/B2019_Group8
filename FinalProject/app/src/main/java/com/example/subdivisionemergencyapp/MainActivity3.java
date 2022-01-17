@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -34,8 +33,6 @@ public class MainActivity3 extends AppCompatActivity {
 
         reference = database.getInstance().getReference("Users")
                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
-
-
         member = new Member();
         confirm_button = findViewById(R.id.confirm_button);
         fire = findViewById(R.id.fire);
