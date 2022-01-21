@@ -20,11 +20,11 @@
 
     <EditText
         android:id="@+id/edt_notEmergency"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/not_emergency"
         android:layout_centerInParent="true"
-        android:layout_marginTop="20sp"
+        android:layout_marginTop="175dp"
         android:ems="10"
         android:hint="Type Concern..."
         android:inputType="textPersonName" />
@@ -42,10 +42,21 @@
 
     <Button
         android:id="@+id/submit_n"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_below="@+id/edt_Items"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="158dp"
         android:onClick="submit"
-        android:text="Submit" />
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:background="#F44336"
+        tools:ignore="OnClick" />
 
 
 </RelativeLayout>

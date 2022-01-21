@@ -25,7 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
 
-
+ 
     private TextView banner;
     private EditText fullName, Email, password, number, Address, Age;
     private Button register;

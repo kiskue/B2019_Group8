@@ -98,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
                     if(user.isEmailVerified()) {
-                        //redirect to menu screen
                         updateUI(user);
 
                     }else{
