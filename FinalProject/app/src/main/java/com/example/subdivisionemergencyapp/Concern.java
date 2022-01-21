@@ -1,6 +1,6 @@
 package com.example.subdivisionemergencyapp;
 
-public class Concern {
+public class  Concern {
     String concern;
     String items;
 
