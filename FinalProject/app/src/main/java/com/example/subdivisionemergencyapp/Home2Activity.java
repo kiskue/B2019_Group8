@@ -2,7 +2,6 @@ package com.example.subdivisionemergencyapp;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -15,10 +14,11 @@ import com.example.subdivisionemergencyapp.databinding.ActivityHome2Binding;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity1 extends AppCompatActivity {
-    Button button;
+public class Home2Activity extends AppCompatActivity {
+
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHome2Binding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +46,7 @@ public class MainActivity1 extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
-
+    
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home2);

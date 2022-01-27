@@ -1,25 +1,33 @@
 package com.example.subdivisionemergencyapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity3 extends AppCompatActivity  {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
+public class MainActivity3 extends AppCompatActivity  {
+    DatabaseReference mRef;
+    SharedPreferences sp;
     Button confirm_button;
 
     CheckBox fire,chemicalSpills,damFailure,earthquake,floods,covidRelated,thunderstorms,robbery,lossChild,rabies,extremeHeat,needAmbulance;
@@ -32,8 +40,9 @@ public class MainActivity3 extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
         reference = database.getInstance().getReference("Users")
-                .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+                .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("Emergency");
         member = new Member();
         confirm_button = findViewById(R.id.confirm_button);
         fire = (CheckBox) findViewById(R.id.fire);
@@ -267,6 +276,71 @@ public class MainActivity3 extends AppCompatActivity  {
     }else {
         Toast.makeText(MainActivity3.this, "Emergency Confirm, Standby!!", Toast.LENGTH_SHORT).show();
     }
+        sp = getSharedPreferences("My Application", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
 
+
+        mRef = FirebaseDatabase.getInstance().getReference("Users")
+          .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        sp = getSharedPreferences("My Application", Context.MODE_PRIVATE);
+
+
+
+        mRef.child("timestart").setValue(ServerValue.TIMESTAMP);
+
+
+        mRef.child("timestart").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                if (dataSnapshot.exists()) {
+                    SharedPreferences.Editor editor = sp.edit();
+                    String timestampstring = dataSnapshot.getValue().toString();
+                    editor.putString("currenttimestamp", timestampstring);
+                    editor.apply();
+                }
+
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                String currenttimestamp = sp.getString("currenttimestamp", "0");
+
+                long currenttimestampinlongformat = Long.parseLong(currenttimestamp);
+
+
+                String todisplaycurrenttimewithdate = getTimeDate(currenttimestampinlongformat);
+
+
+                Toast.makeText(MainActivity3.this, todisplaycurrenttimewithdate, Toast.LENGTH_SHORT).show();
+
+                TextView timedatetext = (TextView) findViewById(R.id.timedatetext);
+
+                timedatetext.setText(todisplaycurrenttimewithdate);
+
+            }
+        }, 2000);
+
+//end component of 'protected void onCreate(Bundle savedInstanceState) {'
+    }
+
+    //this one you already know from my previous video
+    public static String getTimeDate(long timestamp){
+        try{
+            Date netDate = (new Date(timestamp));
+            SimpleDateFormat sfd = new SimpleDateFormat("dd/MMM/yyyy HH:mm:ss", Locale.getDefault());
+            return sfd.format(netDate);
+        } catch(Exception e) {
+            return "date";
+        }
     }
 }
