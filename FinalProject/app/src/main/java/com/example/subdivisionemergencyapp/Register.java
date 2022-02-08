@@ -1,125 +1,83 @@
 package com.example.subdivisionemergencyapp;
 
-import android.app.Activity;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Patterns;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
+import javax.net.ssl.HttpsURLConnection;
 
-public class Register extends AppCompatActivity implements View.OnClickListener {
+/**
+ * Created by Jatinder Bal on 12/27/2018.
+ */
+public class Register {
+    public String sendPostRequest(String requestURL,
+                                  HashMap<String, String> postDataParams) {
+
+        URL url;
+        String response = "";
+        try {
+            url = new URL(requestURL);
+
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setReadTimeout(15000);
+            conn.setConnectTimeout(15000);
+            conn.setRequestMethod("POST");
+            conn.setDoInput(true);
+            conn.setDoOutput(true);
 
 
- 
-    private TextView banner;
-    private EditText fullName, Email, password, number, Address, Age;
-    private Button register;
-    private ProgressBar progressBar;
+            OutputStream os = conn.getOutputStream();
+            BufferedWriter writer = new BufferedWriter(
+                    new OutputStreamWriter(os, "UTF-8"));
+            writer.write(getPostDataString(postDataParams));
 
-    private FirebaseAuth mAuth;
+            writer.flush();
+            writer.close();
+            os.close();
+            int responseCode=conn.getResponseCode();
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+            if (responseCode == HttpsURLConnection.HTTP_OK) {
+                BufferedReader br=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                response = br.readLine();
+            }
+            else {
+                response="Error Registering";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-        mAuth = FirebaseAuth.getInstance();
-
-        banner = (TextView) findViewById(R.id.txtRegHead);
-        banner.setOnClickListener(this);
-
-        register = (Button) findViewById(R.id.btnRegister);
-        register.setOnClickListener(this);
-
-        fullName = (EditText) findViewById(R.id.edtFullName);
-        Email = (EditText) findViewById(R.id.edtRegEmail);
-        password = (EditText) findViewById(R.id.edtRegPassword);
-        number = (EditText) findViewById(R.id.editTextPhone);
-        Address = (EditText) findViewById(R.id.editTextTextPostalAddress);
-        Age = (EditText) findViewById(R.id.editTextNumber);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar2);
+        return response;
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.txtRegHead:
-                startActivity(new Intent(this, MainActivity.class));
-                break;
-            case R.id.btnRegister:
-                registerUser();
-                break;
+    private String getPostDataString(HashMap<String, String> params) throws UnsupportedEncodingException {
+        StringBuilder result = new StringBuilder();
+        boolean first = true;
+        for(Map.Entry<String, String> entry : params.entrySet()){
+            if (first)
+                first = false;
+            else
+                result.append("&");
+
+            result.append(URLEncoder.encode(entry.getKey(), "UTF-8"));
+            result.append("=");
+            result.append(URLEncoder.encode(entry.getValue(), "UTF-8"));
         }
+
+        return result.toString();
     }
+}
 
-    private void registerUser(){
-        String name = fullName.getText().toString().trim();
-        String email = Email.getText().toString().trim();
-        String pswd= password.getText().toString().trim();
-        String age= Age.getText().toString().trim();
-        String address= Address.getText().toString().trim();
-        String phone= number.getText().toString().trim();
-
-        if(name.isEmpty()){
-            fullName.setError("Full name is required!");
-            fullName.requestFocus();
-            return;
-        }
-        if(age.isEmpty()){
-            Age.setError("Age is required!");
-            Age.requestFocus();
-            return;
-        }
-        if(address.isEmpty()){
-            Address.setError("adress is required!");
-            Address.requestFocus();
-            return;
-        }
-        if(phone.isEmpty()){
-            number.setError("Age is required!");
-            number.requestFocus();
-            return;
-        }
-        if(email.isEmpty()){
-            Email.setError("Email is required!");
-            Email.requestFocus();
-            return;
-        }
-        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            Email.setError("Please provide valid email!");
-            Email.requestFocus();
-            return;
-        }
-
-        if(pswd.isEmpty()){
-            password.setError("Password is required!");
-            password.requestFocus();
-            return;
-        }
-
-        if(pswd.length()<6){
-            password.setError("Minimum password length should be 6 characters!");
-            password.requestFocus();
-            return;
-        }
-
-        progressBar.setVisibility(View.VISIBLE);
-        mAuth.createUserWithEmailAndPassword(email,pswd)
+       /* mAuth.createUserWithEmailAndPassword(email,pswd)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -148,6 +106,4 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                             progressBar.setVisibility(View.GONE);
                         }
                     }
-                });
-    }
-}
+                });*/

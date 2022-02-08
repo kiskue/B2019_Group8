@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.subdivisionemergencyapp">
 <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -8,10 +9,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SubdivisionEmergencyApp">
+        android:theme="@style/Theme.SubdivisionEmergencyApp.NoActionBar"
+        android:usesCleartextTraffic="true">
+        android {
+
         <activity
             android:name=".User"
-            android:exported="false" />
+            android:exported="false"
+          />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
@@ -37,6 +42,16 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="b2019cc107group8.000webhostapp.com"
+                    android:scheme="https" />
             </intent-filter>
         </activity>
     </application>

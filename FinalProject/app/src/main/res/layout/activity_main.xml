@@ -1,104 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="MainActivity"
+    android:fillViewport="true"
     android:background="@drawable/background1">
 
-    <TextView
-        android:id="@+id/txtHeader"
-        android:layout_width="286dp"
-        android:layout_height="128dp"
-        android:text="Subdivision
-        EmergencyApp"
-        android:textColor="#000000"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/edtPassword"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="342dp"
+            android:layout_height="615dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
 
-    <EditText
-        android:id="@+id/edtEmail"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="92dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="129dp"
-        android:layout_height="48dp"
-        android:text="Login"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
-        app:layout_constraintVertical_bias="0.185" />
+            <ImageView
 
-    <TextView
-        android:id="@+id/txtRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:textColor="#515151"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.17" />
+                android:id="@+id/nav_user_photo"
+                android:layout_width="158dp"
+                android:layout_height="124dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
 
-    <TextView
-        android:id="@+id/txtForgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Password?"
-        android:textColor="#515151"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
-        app:layout_constraintStart_toEndOf="@+id/txtRegister"
-        app:layout_constraintTop_toTopOf="@+id/txtRegister"
-        app:layout_constraintVertical_bias="0.02" />
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/logo" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="286dp"
+                android:layout_height="128dp"
+                android:gravity="center"
+                android:text="Subdivision
+            EmergencyApp"
+
+                android:textColor="#000000"
+                android:textSize="36sp" />
+
+
+            <EditText
+                android:id="@+id/edtRegEmail"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edtRegPassword"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edtFullName"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="292dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Age"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextTextPostalAddress"
+                android:layout_width="291dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Address"
+                android:inputType="textPostalAddress"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="292dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit"
+                android:text="SIGN IN"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit"
+                android:text="REGISTER"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

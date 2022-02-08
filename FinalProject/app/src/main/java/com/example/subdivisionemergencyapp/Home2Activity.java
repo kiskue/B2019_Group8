@@ -1,18 +1,11 @@
 package com.example.subdivisionemergencyapp;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.subdivisionemergencyapp.databinding.ActivityHome2Binding;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class Home2Activity extends AppCompatActivity {
 
@@ -23,7 +16,7 @@ public class Home2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityHome2Binding.inflate(getLayoutInflater());
+    /*    binding = ActivityHome2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarHome2.toolbar);
@@ -51,6 +44,6 @@ public class Home2Activity extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home2);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
+                || super.onSupportNavigateUp();*/
     }
 }

@@ -5,48 +5,37 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.subdivisionemergencyapp.R;
 import com.example.subdivisionemergencyapp.databinding.FragmentHomeBinding;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ServerValue;
-import com.google.firebase.database.ValueEventListener;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 
 public class LogoutFragment extends Fragment{
-    private FirebaseUser user;
-    private DatabaseReference RootRef;
+   // private FirebaseUser user;
+    //private DatabaseReference RootRef;
     private String currentUserID;
     private LogoutViewModel logoutViewModel;
     private FragmentHomeBinding binding;
     SharedPreferences sp;
-    private FirebaseAuth mAuth;
+   // private FirebaseAuth mAuth;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_logout, container, false);
 
-        TextView startdate = (TextView) view.findViewById(R.id.startdate);
-        TextView stopdate = (TextView) view.findViewById(R.id.stopdate);
+        View view = inflater.inflate(R.layout.fragment_logout, container, false);
+        return view;
+    }}
+
+      //  TextView startdate = (TextView) view.findViewById(R.id.startdate);
+       // TextView stopdate = (TextView) view.findViewById(R.id.stopdate);
 
         //firebase server time value are in this format: 1639463051791
         //you simply, have to get the firebase server timevalue
         //=========================================================================
-             mAuth = FirebaseAuth.getInstance();
+          /*   mAuth = FirebaseAuth.getInstance();
              currentUserID = mAuth.getCurrentUser().getUid();
              RootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -125,7 +114,6 @@ public class LogoutFragment extends Fragment{
             return "date";
         }
 
+*/
 
 
-    }
-}
