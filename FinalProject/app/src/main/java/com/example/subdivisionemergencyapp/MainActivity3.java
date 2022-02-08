@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.HashMap;
 
 public class MainActivity3 extends AppCompatActivity {
-    EditText txtemail,boxfire,boxearthquake,boxfloods,boxrobbery,boxlosschild,boxrabies,boxneedambulance;
+    EditText txtemail,boxfire,boxearthquake,boxfloods,boxrobbery,boxlosschild,boxrabies,boxneedambulance, boxbomb_threat,boxpersonal_threat;
     Button confirm_button;
     ProgressDialog mProgressDialog;
     private static final String INSERTDATA_URL = "https://b2019cc107group8.000webhostapp.com/emergency.php";
@@ -30,7 +30,8 @@ public class MainActivity3 extends AppCompatActivity {
         boxfloods = findViewById(R.id.floods);
         boxrobbery = findViewById(R.id.robbery);
         boxlosschild = findViewById(R.id.lossChild);
-        boxrabies = findViewById(R.id.rabies);
+        boxbomb_threat = findViewById(R.id.bombtreat);
+        boxpersonal_threat = findViewById(R.id.personalthreat);
         boxneedambulance = findViewById(R.id.needAmbulance);
         txtemail = (EditText) findViewById(R.id.txtEmail);
 
@@ -39,17 +40,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String email = txtemail.getText().toString().trim().toLowerCase();
-                String fire = boxfire.getText().toString();
-                String  earthquake= boxearthquake.getText().toString();
-                String robbery = boxrobbery.getText().toString();
-                String needambulance = boxneedambulance.getText().toString();
-                String floods = boxfloods.getText().toString();
-                String rabies = boxrabies.getText().toString();
-                String losschild = boxlosschild.getText().toString();
 
 
-                if(!email.equals("") && !earthquake.equals("") && !fire.equals("") && !floods.equals("") && !needambulance.equals("") && !rabies.equals("") && !robbery.equals("") && !losschild.equals("")){
-                    Toast.makeText(MainActivity3.this,"Please choose any Emergency", Toast.LENGTH_SHORT).show();
+                if(!email.isEmpty()||!email.isEmpty()){
                 }
                 InsertData();
 
@@ -59,21 +52,25 @@ public class MainActivity3 extends AppCompatActivity {
     }
     private void InsertData() {
         String email = txtemail.getText().toString().trim().toLowerCase();
+        String fire = boxfire.getText().toString().trim().toLowerCase();
+        String floods = boxfloods.getText().toString().trim().toLowerCase();
+        String robbery = boxrobbery.getText().toString().trim().toLowerCase();
+        String earthquake = boxearthquake.getText().toString().trim().toLowerCase();
+        String bomb_threat = boxbomb_threat.getText().toString().trim().toLowerCase();
+        String need_ambulance = boxneedambulance.getText().toString().trim().toLowerCase();
+        String lost_family = boxlosschild.getText().toString().trim().toLowerCase();
+        String personal_threat = boxpersonal_threat.getText().toString().trim().toLowerCase();
+        if(!email.equals("") && fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals(""))  {
+            Toast.makeText(MainActivity3.this,"Please fill email or emergency!!", Toast.LENGTH_SHORT).show();
+       }
+       else {
 
 
-
-
-       // if(!email.equals("") && !boxearthquake.isChecked() && !boxfire.isChecked() && !boxfloods.isChecked() && !boxneedambulance.isChecked() && !boxrabies.isChecked() && !boxrobbery.isChecked() && !boxlosschild.isChecked()) {
-            Toast.makeText(MainActivity3.this,"Please choose any Emergency", Toast.LENGTH_SHORT).show();
-    //    }
-      //  else {
-
-
-          //  register(email,fire,earthquake,robbery,needambulance,floods,rabies,losschild);
-     //   }
+            register(email,fire,floods,robbery,earthquake,bomb_threat,need_ambulance,lost_family,personal_threat);
+     }
     }
 
-    private void register(String email, String fire, String earthquake, String robbery, String needambulance,String floods, String rabies, String losschild ) {
+    private void register(String email, String fire, String floods, String robbery, String earthquake,String bomb_threat, String need_ambulance, String lost_family, String personal_threat ) {
         class RegisterUsers  extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             Register ruc = new Register();
@@ -110,12 +107,14 @@ public class MainActivity3 extends AppCompatActivity {
 
                 data.put("email",params[0]);
                 data.put("fire", params[1]);
-                data.put("earthquake", params[2]);
+                data.put("floods", params[2]);
                 data.put("robbery", params[3]);
-                data.put("needambulance", params[3]);
-                data.put("floods", params[3]);
-                data.put("rabies", params[3]);
-                data.put("losschild", params[3]);
+                data.put("earthquake", params[4]);
+                data.put("bomb_threat", params[5]);
+                data.put("need_ambulance", params[6]);
+                data.put("lost_family", params[7]);
+                data.put("personal_threat", params[8]);
+
 
                 String result = ruc.sendPostRequest(INSERTDATA_URL, data);
 
@@ -124,7 +123,7 @@ public class MainActivity3 extends AppCompatActivity {
         }
 
         RegisterUsers ru = new RegisterUsers();
-        ru.execute(email,fire,earthquake,robbery,needambulance,floods,rabies,losschild);
+        ru.execute(email,fire,floods,robbery,earthquake,bomb_threat,need_ambulance,lost_family,personal_threat);
     }
 }
   //  DatabaseReference mRef;

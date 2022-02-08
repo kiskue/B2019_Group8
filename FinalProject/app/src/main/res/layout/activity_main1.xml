@@ -5,29 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background1"
+    app:srcCompat="@drawable/fireemergency"
     tools:context=".MainActivity1">
 
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="469dp"
+        android:layout_height="430dp"
+        app:srcCompat="@drawable/fireemergency"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-97dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="181dp"
         android:layout_height="174dp"
         android:background="@drawable/circle"
-        android:textSize="30dp"
         android:text="PRESS ME"
         android:textColor="@color/white"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.597" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EMERGENCY NEED HELP?"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
