@@ -6,7 +6,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,8 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.HashMap;
 
 public class MainActivity3 extends AppCompatActivity {
-    EditText txtemail;
-    CheckBox boxfire,boxearthquake,boxfloods,boxrobbery,boxlosschild,boxrabies,boxneedambulance;
+    EditText txtemail,boxfire,boxearthquake,boxfloods,boxrobbery,boxlosschild,boxrabies,boxneedambulance;
     Button confirm_button;
     ProgressDialog mProgressDialog;
     private static final String INSERTDATA_URL = "https://b2019cc107group8.000webhostapp.com/emergency.php";
@@ -27,63 +25,15 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
         confirm_button = findViewById(R.id.confirm_button);
-        boxfire = (CheckBox) findViewById(R.id.fire);
-        boxearthquake = (CheckBox) findViewById(R.id.earthquake);
-        boxfloods = (CheckBox) findViewById(R.id.floods);
-        boxrobbery = (CheckBox) findViewById(R.id.robbery);
-        boxlosschild = (CheckBox) findViewById(R.id.lossChild);
-        boxrabies = (CheckBox) findViewById(R.id.rabies);
-        boxneedambulance = (CheckBox) findViewById(R.id.needAmbulance);
+        boxfire = findViewById(R.id.fire);
+        boxearthquake = findViewById(R.id.earthquake);
+        boxfloods = findViewById(R.id.floods);
+        boxrobbery = findViewById(R.id.robbery);
+        boxlosschild = findViewById(R.id.lossChild);
+        boxrabies = findViewById(R.id.rabies);
+        boxneedambulance = findViewById(R.id.needAmbulance);
         txtemail = (EditText) findViewById(R.id.txtEmail);
-        boxfire.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (boxfire.isChecked())
-                    Toast.makeText(MainActivity3.this, "Fire checked", Toast.LENGTH_SHORT).show();
-            }
-        });
-        boxearthquake.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (boxearthquake.isChecked())
-                    Toast.makeText(MainActivity3.this, "Earthquake checked", Toast.LENGTH_SHORT).show();
-            }
-        });
-        boxfloods.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(boxfloods.isChecked())
-                    Toast.makeText(MainActivity3.this, "Floods checked", Toast.LENGTH_SHORT).show();
-            }
-        });
-        boxrobbery.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (boxrobbery.isChecked())
-                    Toast.makeText(MainActivity3.this, "Robbery checked", Toast.LENGTH_SHORT).show();
-            }
-        });
-        boxlosschild.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (boxlosschild.isChecked())
-                    Toast.makeText(MainActivity3.this, "Lostchild checked", Toast.LENGTH_SHORT).show();
-            }
-        });
-        boxrabies.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (boxrabies.isChecked())
-                    Toast.makeText(MainActivity3.this, "Rabies checked", Toast.LENGTH_SHORT).show();
-            }
-        });
-        boxneedambulance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (boxneedambulance.isChecked())
-                    Toast.makeText(MainActivity3.this, "Need Ambulance checked", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         confirm_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,26 +59,21 @@ public class MainActivity3 extends AppCompatActivity {
     }
     private void InsertData() {
         String email = txtemail.getText().toString().trim().toLowerCase();
-        boolean fire = boxfire.isChecked();
-        boolean  earthquake= boxearthquake.isChecked();
-        boolean robbery = boxrobbery.isChecked();
-        boolean needambulance = boxneedambulance.isChecked();
-        boolean floods = boxfloods.isChecked();
-        boolean rabies = boxrabies.isChecked();
-        boolean losschild = boxlosschild.isChecked();
 
 
-        if(!email.equals("") && !boxearthquake.isChecked() && !boxfire.isChecked() && !boxfloods.isChecked() && !boxneedambulance.isChecked() && !boxrabies.isChecked() && !boxrobbery.isChecked() && !boxlosschild.isChecked()) {
+
+
+       // if(!email.equals("") && !boxearthquake.isChecked() && !boxfire.isChecked() && !boxfloods.isChecked() && !boxneedambulance.isChecked() && !boxrabies.isChecked() && !boxrobbery.isChecked() && !boxlosschild.isChecked()) {
             Toast.makeText(MainActivity3.this,"Please choose any Emergency", Toast.LENGTH_SHORT).show();
-        }
-        else {
+    //    }
+      //  else {
 
 
-            register(email,fire,earthquake,robbery,needambulance,floods,rabies,losschild);
-        }
+          //  register(email,fire,earthquake,robbery,needambulance,floods,rabies,losschild);
+     //   }
     }
 
-    private void register(String email, boolean fire, boolean earthquake, boolean robbery, boolean needambulance,boolean floods, boolean rabies, boolean losschild ) {
+    private void register(String email, String fire, String earthquake, String robbery, String needambulance,String floods, String rabies, String losschild ) {
         class RegisterUsers  extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             Register ruc = new Register();

@@ -10,19 +10,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SubdivisionEmergencyApp.NoActionBar"
-        android:usesCleartextTraffic="true">
-        android {
+        android:usesCleartextTraffic="true"
+        >
 
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
         <activity
             android:name=".User"
             android:exported="false"
-          />
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity
             android:name=".Register"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".MainActivity1"
             android:exported="false" />
