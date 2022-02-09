@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
-    android:background="@drawable/background3">
+    android:alpha="0.8">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,124 +13,129 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="342dp"
-            android:layout_height="615dp"
-            android:layout_centerInParent="true"
+            android:layout_width="379dp"
+            android:layout_height="702dp"
 
+            android:layout_centerInParent="true"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="24dp"
             android:paddingRight="24dp">
 
+
             <ImageView
-
-                android:id="@+id/nav_user_photo"
-                android:layout_width="158dp"
-                android:layout_height="124dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-
-                android:layout_gravity="center"
-                android:contentDescription="@string/nav_header_desc"
-                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:id="@+id/logo"
+                android:layout_width="457dp"
+                android:layout_height="323dp"
                 app:srcCompat="@drawable/logo" />
-
-            <TextView
-                android:id="@+id/txtHeader"
-                android:layout_width="286dp"
-                android:layout_height="128dp"
-                android:gravity="center"
-                android:text="Subdivision
-            EmergencyApp"
-                android:textColor="#ffffff"
-                android:textSize="36sp" />
-
 
             <EditText
                 android:id="@+id/edtRegEmail"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/edtRegPassword"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/edtFullName"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Full Name"
+                android:visibility="gone"
                 android:inputType="textPersonName"
-                android:visibility="gone" />
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/editTextNumber"
                 android:layout_width="292dp"
                 android:layout_height="58dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Age"
                 android:inputType="number"
-                android:visibility="gone" />
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/editTextTextPostalAddress"
                 android:layout_width="291dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Address"
                 android:inputType="textPostalAddress"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/editTextPhone"
                 android:layout_width="292dp"
                 android:layout_height="54dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Phone Number"
                 android:inputType="phone"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/colorPrimary" />
 
 
             <Button
                 android:id="@+id/btnSignIn"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/submit"
                 android:text="SIGN IN"
                 android:textColor="@color/white"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"
+                />
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
                 android:background="@drawable/submit"
                 android:text="REGISTER"
                 android:textColor="@color/white"
