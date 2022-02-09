@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         editphone = (EditText) findViewById(R.id.editTextPhone);
         editaddress = (EditText) findViewById(R.id.editTextTextPostalAddress);
         editage = (EditText) findViewById(R.id.editTextNumber);
-        txtheader = (TextView) findViewById(R.id.txtHeader);
+        txtheader = (TextView) findViewById(R.id.text12);
         imageView = findViewById(R.id.logo);
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
         btnRegister=(Button)findViewById(R.id.btnRegister);
@@ -75,9 +75,8 @@ public class MainActivity extends AppCompatActivity {
                     editaddress.setVisibility(View.VISIBLE);
                     editphone.setVisibility(View.VISIBLE);
                     btnSignIn.setVisibility(View.GONE);
+                    txtheader.setVisibility(View.VISIBLE);
                     imageView.setVisibility(View.GONE);
-
-
                     btnRegister.setText("CREATE ACCOUNT");
                 }
                 else{
@@ -88,7 +87,9 @@ public class MainActivity extends AppCompatActivity {
                     editaddress.setVisibility(View.GONE);
                     editphone.setVisibility(View.GONE);
                     imageView.setVisibility(View.VISIBLE);
+                    txtheader.setVisibility(View.GONE);
                     btnSignIn.setVisibility(View.VISIBLE);
+
                     i=0;
 
                     AttemptLogin attemptLogin= new AttemptLogin();

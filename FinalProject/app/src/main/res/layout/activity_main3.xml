@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
     android:gravity="center
 "   android:alpha="0.8"
     android:orientation="vertical"
@@ -35,226 +34,59 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
-
-    <EditText
-        android:id="@+id/robbery"
-        android:layout_width="89dp"
-        android:layout_height="47dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/input_bg"
-        android:gravity="center"
-        android:hint="Robbery"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
-
-    <EditText
-        android:id="@+id/personalthreat"
-        android:layout_width="118dp"
-        android:layout_height="65dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/input_bg"
-        android:gravity="center"
-        android:hint="Personal Threat"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.907"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
-
-    <EditText
-        android:id="@+id/earthquake"
-        android:layout_width="127dp"
-        android:layout_height="52dp"
-        android:background="@drawable/input_bg"
-        android:gravity="center"
-        android:hint="Earthquake"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
-
-    <EditText
-        android:id="@+id/floods"
-        android:layout_width="67dp"
-        android:layout_height="41dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/input_bg"
-        android:gravity="center"
-        android:hint="Floods"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <EditText
-        android:id="@+id/needAmbulance"
-        android:layout_width="119dp"
-        android:layout_height="58dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/input_bg"
-        android:gravity="center"
-        android:hint="Need Ambulance"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="58dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812"
-        app:srcCompat="@drawable/cry"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/lossChild"
-        android:layout_width="71dp"
-        android:layout_height="54dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/input_bg"
-        android:gravity="center"
-        android:hint="Lost Family"
-        android:padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819" />
-
-    <ImageView
-        android:layout_width="58dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631"
-        app:srcCompat="@drawable/thief"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="58dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535"
-        app:srcCompat="@drawable/flooded"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="58dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812"
-        app:srcCompat="@drawable/unknown"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.341" />
 
     <EditText
         android:id="@+id/fire"
-        android:layout_width="61dp"
-        android:layout_height="42dp"
-        android:background="@drawable/input_bg"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checkboxsize"
         android:gravity="center"
         android:hint="Fire"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="58dp"
-        android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725"
-        app:srcCompat="@drawable/threat"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <EditText
-        android:id="@+id/txtEmail"
-        android:layout_width="282dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:id="@+id/lossChild"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkboxsize"
+        android:gravity="center"
+        android:hint="Lost Family"
+        android:padding="5dp"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.826" />
 
     <EditText
         android:id="@+id/bombtreat"
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/checkboxsize"
         android:gravity="center"
         android:hint="Bomb Threat"
         android:padding="5dp"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="53dp"
-        android:layout_height="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534"
-        app:srcCompat="@drawable/firetruck"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.738" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -265,9 +97,175 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626"
+        app:layout_constraintVertical_bias="0.648"
         app:srcCompat="@drawable/earthquake"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/earthquake"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checkboxsize"
+        android:gravity="center"
+        android:hint="Earthquake"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <EditText
+        android:id="@+id/personalthreat"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkboxsize"
+        android:gravity="center"
+        android:hint="Personal Threat"
+        android:padding="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557"
+        app:srcCompat="@drawable/flooded"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checkboxsize"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <EditText
+        android:id="@+id/needAmbulance"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkboxsize"
+        android:gravity="center"
+        android:hint="Need Ambulance"
+        android:padding="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834"
+        app:srcCompat="@drawable/unknown"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652"
+        app:srcCompat="@drawable/thief"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        app:srcCompat="@drawable/firetruck"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/robbery"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkboxsize"
+        android:gravity="center"
+        android:hint="Robbery"
+        android:padding="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834"
+        app:srcCompat="@drawable/cry"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/floods"
+        android:layout_width="113dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/checkboxsize"
+        android:gravity="center"
+        android:hint="Floods"
+        android:padding="5dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -278,10 +276,9 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725"
+        app:layout_constraintVertical_bias="0.746"
         app:srcCompat="@drawable/ambulance"
         tools:ignore="MissingConstraints" />
-
 
     <Button
         android:id="@+id/confirm_button"
@@ -295,7 +292,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.93" />
+        app:layout_constraintVertical_bias="0.951" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746"
+        app:srcCompat="@drawable/threat"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

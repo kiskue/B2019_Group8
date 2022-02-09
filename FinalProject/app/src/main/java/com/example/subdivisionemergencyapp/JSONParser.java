@@ -35,23 +35,19 @@ public class JSONParser {
     static String json = "";
     static String error = "";
 
-    // constructor
+
     public JSONParser() {
 
     }
 
-    // function get json from url
-    // by making HTTP POST or GET mehtod
     public JSONObject makeHttpRequest(String url, String method,
                                       ArrayList<NameValuePair> params) {
 
-        // Making HTTP request
+
         try {
 
-            // check for request method
+
             if(method.equals("POST")){
-                // request method is POST
-                // defaultHttpClient
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(url);
                 httpPost.setEntity(new UrlEncodedFormEntity(params));
@@ -103,7 +99,7 @@ public class JSONParser {
             Log.e("Buffer Error", "Error converting result " + e.toString());
         }
 
-        // try parse the string to a JSON object
+
         try {
             jObj = new JSONObject(json);
             jObj.put("error_code",error);
@@ -111,7 +107,7 @@ public class JSONParser {
             Log.e("JSON Parser", "Error parsing data " + e.toString());
         }
 
-        // return JSON String
+
         return jObj;
 
     }

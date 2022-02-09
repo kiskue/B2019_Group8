@@ -28,6 +28,21 @@
                 android:layout_width="457dp"
                 android:layout_height="323dp"
                 app:srcCompat="@drawable/logo" />
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBDIVISION EMERGENCYAPP"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.875" />
 
             <EditText
                 android:id="@+id/edtRegEmail"
@@ -83,9 +98,10 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Age"
+                android:visibility="gone"
                 android:inputType="number"
                 android:paddingLeft="20dp"
-                android:visibility="gone"
+
                 android:textColorHint="@color/colorPrimary" />
 
             <EditText
@@ -135,7 +151,7 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="100dp"
+
                 android:background="@drawable/submit"
                 android:text="REGISTER"
                 android:textColor="@color/white"
