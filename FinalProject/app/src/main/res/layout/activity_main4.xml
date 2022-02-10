@@ -25,21 +25,13 @@
             android:id="@+id/nav_user_photo"
             android:layout_width="375dp"
             android:layout_height="142dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-
-            android:layout_gravity="center"
-            android:contentDescription="@string/nav_header_desc"
-            android:paddingTop="@dimen/nav_header_vertical_spacing"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.026"
             app:srcCompat="@drawable/logo"
             tools:ignore="MissingConstraints" />
-
         <TextView
             android:fontFamily="@font/aldrich"
             android:id="@+id/txtHeader"

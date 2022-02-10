@@ -4,8 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+
     tools:context=".MainActivity2">
+
+    <ImageView
+
+        android:id="@+id/nav_user_photo"
+        android:layout_width="374dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button1"
@@ -15,11 +29,12 @@
         android:text="EMERGENCY"
         android:textColor="@color/white"
         android:textSize="25dp"
+        android:fontFamily="@font/aldrich"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <Button
         android:id="@+id/button2"
@@ -29,11 +44,12 @@
         android:text="NOT EMERGENCY"
         android:textColor="@color/white"
         android:textSize="25dp"
+        android:fontFamily="@font/aldrich"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.827" />
 
     <TextView
         android:id="@+id/textView4"
@@ -41,14 +57,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
         android:text="PLEASE SELECT"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary"
         android:textSize="25dp"
+        android:fontFamily="@font/aldrich"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.765" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
