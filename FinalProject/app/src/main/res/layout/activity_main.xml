@@ -5,7 +5,8 @@
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
-    android:alpha="0.8">
+    android:alpha="0.8"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,9 +14,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="379dp"
-            android:layout_height="702dp"
-
+            android:layout_width="375dp"
+            android:layout_height="717dp"
             android:layout_centerInParent="true"
             android:gravity="center"
             android:orientation="vertical"
@@ -28,13 +28,14 @@
                 android:layout_width="457dp"
                 android:layout_height="323dp"
                 app:srcCompat="@drawable/logo" />
+
             <TextView
                 android:id="@+id/text12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="SUBDIVISION EMERGENCYAPP"
                 android:textColor="@color/colorPrimary"
-                android:gravity="center"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:visibility="gone"
@@ -44,114 +45,125 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.875" />
 
-            <EditText
-                android:id="@+id/edtRegEmail"
-                android:layout_width="290dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/checkboxsize"
-                android:ems="10"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:paddingLeft="20dp"
-                android:textColorHint="@color/colorPrimary" />
+                <EditText
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/edtRegEmail"
+                    android:layout_width="290dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/checkboxsize"
+                    android:ems="10"
+                    android:textColor="@color/colorPrimary"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="@color/colorPrimary" />
 
-            <EditText
-                android:id="@+id/edtRegPassword"
-                android:layout_width="290dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/checkboxsize"
-                android:ems="10"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:paddingLeft="20dp"
-                android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                    android:id="@+id/edtRegPassword"
+                    android:layout_width="290dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/checkboxsize"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp" />
+
 
             <EditText
                 android:id="@+id/edtFullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Full Name"
-                android:visibility="gone"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
-                android:textColorHint="@color/colorPrimary" />
+                android:textColorHint="@color/colorPrimary"
+                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/editTextNumber"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="292dp"
                 android:layout_height="58dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:hint="Age"
-                android:visibility="gone"
                 android:inputType="number"
                 android:paddingLeft="20dp"
+                android:textColorHint="@color/colorPrimary"
 
-                android:textColorHint="@color/colorPrimary" />
+                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/editTextTextPostalAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="291dp"
                 android:layout_height="55dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
+                android:textColor="@color/colorPrimary"
                 android:focusableInTouchMode="true"
                 android:hint="Address"
                 android:inputType="textPostalAddress"
-                android:visibility="gone"
                 android:paddingLeft="20dp"
-                android:textColorHint="@color/colorPrimary" />
+                android:textColorHint="@color/colorPrimary"
+                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/editTextPhone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="292dp"
                 android:layout_height="54dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/checkboxsize"
                 android:ems="10"
                 android:focusable="true"
+                android:textColor="@color/colorPrimary"
                 android:focusableInTouchMode="true"
                 android:hint="Phone Number"
                 android:inputType="phone"
-                android:visibility="gone"
                 android:paddingLeft="20dp"
-                android:textColorHint="@color/colorPrimary" />
+                android:textColorHint="@color/colorPrimary"
+                android:visibility="gone" />
 
 
             <Button
                 android:id="@+id/btnSignIn"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/submit"
                 android:text="SIGN IN"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="wrap_content"
-
                 android:background="@drawable/submit"
                 android:text="REGISTER"
                 android:textColor="@color/white"
