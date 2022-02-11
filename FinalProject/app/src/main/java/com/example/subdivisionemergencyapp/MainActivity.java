@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         editfullName = (EditText) findViewById(R.id.edtFullName);
         editemail = (EditText) findViewById(R.id.edtRegEmail);
         editpassword = (EditText) findViewById(R.id.edtRegPassword);
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
             super.onPreExecute();
             progressDialog = new ProgressDialog(MainActivity.this);
-            progressDialog.setMessage("Please Wait");
+            progressDialog.setMessage("Please Wait...");
             progressDialog.setCancelable(false);
             progressDialog.show();
 

@@ -47,12 +47,12 @@
 
                 <EditText
                     style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+                    android:textColor="@color/colorPrimary"
                     android:id="@+id/edtRegEmail"
                     android:layout_width="290dp"
                     android:layout_height="52dp"
                     android:background="@drawable/checkboxsize"
                     android:ems="10"
-                    android:textColor="@color/colorPrimary"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Email"

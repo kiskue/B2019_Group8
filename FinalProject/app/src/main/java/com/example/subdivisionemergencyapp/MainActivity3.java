@@ -40,9 +40,19 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String email = txtemail.getText().toString().trim().toLowerCase();
+                String fire = boxfire.getText().toString().trim().toLowerCase();
+                String floods = boxfloods.getText().toString().trim().toLowerCase();
+                String robbery = boxrobbery.getText().toString().trim().toLowerCase();
+                String earthquake = boxearthquake.getText().toString().trim().toLowerCase();
+                String bomb_threat = boxbomb_threat.getText().toString().trim().toLowerCase();
+                String need_ambulance = boxneedambulance.getText().toString().trim().toLowerCase();
+                String lost_family = boxlosschild.getText().toString().trim().toLowerCase();
+                String personal_threat = boxpersonal_threat.getText().toString().trim().toLowerCase();
 
-
-                if(!email.isEmpty()||!email.isEmpty()){
+                if (email.equals("")) {
+                    Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
+                 else if( fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals("")) {
+                    Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
 
@@ -60,8 +70,10 @@ public class MainActivity3 extends AppCompatActivity {
         String need_ambulance = boxneedambulance.getText().toString().trim().toLowerCase();
         String lost_family = boxlosschild.getText().toString().trim().toLowerCase();
         String personal_threat = boxpersonal_threat.getText().toString().trim().toLowerCase();
-        if(!email.equals("") && fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals(""))  {
-            Toast.makeText(MainActivity3.this,"Please fill email or emergency!!", Toast.LENGTH_SHORT).show();
+        if (email.equals("")) {
+            Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
+        else if(fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals(""))  {
+            Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
        }
        else {
 

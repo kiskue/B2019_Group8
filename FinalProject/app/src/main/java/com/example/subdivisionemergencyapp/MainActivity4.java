@@ -37,9 +37,14 @@ public class MainActivity4 extends AppCompatActivity {
                 String address = txtaddress.getText().toString().trim().toLowerCase();
                 String Concern = txtConcern.getText().toString().trim().toLowerCase();
                 String Needforconcern = txtNeedforcencern.getText().toString().trim().toLowerCase();
-
-                if (Name.equals("")||address.equals("")||Concern.equals("")||Needforconcern.equals("")){
-                    Toast.makeText(MainActivity4.this, "Please Enter a Detail!!", Toast.LENGTH_SHORT).show();
+                if(Name.equals("")){
+                    Toast.makeText(MainActivity4.this, "Please Enter Fullname!!", Toast.LENGTH_SHORT).show();
+                }
+                else if(address.equals("")){
+                    Toast.makeText(MainActivity4.this, "Please Enter Address!!", Toast.LENGTH_SHORT).show();
+                }
+                else if (Concern.equals("")||Needforconcern.equals("")){
+                    Toast.makeText(MainActivity4.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
 
@@ -53,8 +58,14 @@ public class MainActivity4 extends AppCompatActivity {
         String Concern = txtConcern.getText().toString().trim().toLowerCase();
         String Needforconcern = txtNeedforcencern.getText().toString().trim().toLowerCase();
 
-        if (Name.equals("")||address.equals("")||Concern.equals("")||Needforconcern.equals("")){
-            Toast.makeText(MainActivity4.this, "Please Enter a Detail!!", Toast.LENGTH_SHORT).show();
+        if(Name.equals("")){
+            Toast.makeText(MainActivity4.this, "Please Enter Fullname!!", Toast.LENGTH_SHORT).show();
+        }
+        else if(address.equals("")){
+            Toast.makeText(MainActivity4.this, "Please Enter Address!!", Toast.LENGTH_SHORT).show();
+        }
+        else if (Concern.equals("")||Needforconcern.equals("")){
+            Toast.makeText(MainActivity4.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
         }
         else {
 

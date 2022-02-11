@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center
 "   android:alpha="0.8"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
     android:orientation="vertical"
     tools:context=".MainActivity3">
 
@@ -21,6 +22,25 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/floods"
         tools:ignore="MissingConstraints" />
+    <EditText
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtEmail"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:background="@drawable/checkboxsize"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
 
     <TextView
         android:id="@+id/textView5"
@@ -41,6 +61,9 @@
 
     <EditText
         android:id="@+id/fire"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:background="@drawable/checkboxsize"
@@ -56,6 +79,9 @@
 
     <EditText
         android:id="@+id/lossChild"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -73,6 +99,9 @@
 
     <EditText
         android:id="@+id/bombtreat"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -103,6 +132,9 @@
 
     <EditText
         android:id="@+id/earthquake"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="114dp"
         android:layout_height="50dp"
         android:background="@drawable/checkboxsize"
@@ -118,6 +150,9 @@
 
     <EditText
         android:id="@+id/personalthreat"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="115dp"
         android:layout_height="55dp"
         android:layout_margin="10dp"
@@ -147,26 +182,10 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/txtEmail"
-        android:layout_width="255dp"
-        android:layout_height="50dp"
-        android:background="@drawable/checkboxsize"
-        android:ems="10"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="20dp"
-        android:textColorHint="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.664"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
-
-    <EditText
         android:id="@+id/needAmbulance"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="114dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -222,6 +241,9 @@
 
     <EditText
         android:id="@+id/robbery"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -252,6 +274,9 @@
 
     <EditText
         android:id="@+id/floods"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
         android:layout_width="113dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
