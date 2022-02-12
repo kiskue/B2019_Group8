@@ -1,113 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background1"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.logout.LogoutFragment"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:alpha="0.8">
 
-    <TextView
-        android:id="@+id/textView3"
+    <RelativeLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/startdate"
-        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="#FCFAED"
-        android:text="Hello World!"
-        android:textColor="#000000"
-        android:textColorHighlight="#F2F2F2"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        android:background="@color/white"
+        android:padding="40dp"
+        tools:context=".ui.logout.LogoutFragment">
 
-    <TextView
-        android:id="@+id/stopdate"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="#F80000"
-        android:text="Hello World!"
-        android:textColor="#FFC61D"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="1784dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
 
-    <TextView
-        android:id="@+id/minutesduration"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="200dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:src="@drawable/dos1" />
 
-    <TextView
-        android:id="@+id/secondsduration"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="25dp"
+                android:paddingTop="30dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="20dp"
+                android:text="Do's"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/hoursduration"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="400dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do communicate to your family, friends, co-workers and neighbors about emergency preparedness. "
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have an emergency “go” kit ready. Collecting flashlights, batteries, first aid kits, clocks, radio, important papers in the midst of an emergency is not a good idea.
+Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have at least 1 out-of-state contact. If circuits are busy you stand a better chance of reaching someone further away."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"/>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have enough medicine."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"/>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Condition of use"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="You may not use our app if you violate these terms and policies."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
 
-    <TextView
-        android:id="@+id/timedifference"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="500dp"
-        android:text="Hello World!"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Push only the button and make sure before you confirm the submission of your concerns, the information is accurate."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don't create a fake accounts."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Termination of user accounts if found a lot of violations."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="If found creating a fake account and using it in our app, deletion of the user accounts will be done."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
