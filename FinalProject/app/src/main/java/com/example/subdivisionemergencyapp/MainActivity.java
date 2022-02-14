@@ -56,11 +56,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AttemptLogin attemptLogin = new AttemptLogin();
-                attemptLogin.execute(editemail.getText().toString(), editpassword.getText().toString(), "", "", "", "");
-
-
-
+                    AttemptLogin attemptLogin = new AttemptLogin();
+                    attemptLogin.execute(editemail.getText().toString(), editpassword.getText().toString(), "", "", "", "");
             }
         });
 
@@ -80,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     imageView.setVisibility(View.GONE);
                     btnRegister.setText("CREATE ACCOUNT");
                 }
-                else{
+                else {
 
                     btnRegister.setText("REGISTER");
                     editfullName.setVisibility(View.GONE);
@@ -91,14 +88,13 @@ public class MainActivity extends AppCompatActivity {
                     txtheader.setVisibility(View.GONE);
                     btnSignIn.setVisibility(View.VISIBLE);
 
-                    i=0;
+                    i = 0;
 
-                    AttemptLogin attemptLogin= new AttemptLogin();
-                    attemptLogin.execute( editemail.getText().toString(), editpassword.getText().toString(), editfullName.getText().toString(), editage.getText().toString(), editaddress.getText().toString(),
-                            editphone.getText().toString());
+                        AttemptLogin attemptLogin = new AttemptLogin();
+                        attemptLogin.execute(editemail.getText().toString(), editpassword.getText().toString(), editfullName.getText().toString(), editage.getText().toString(), editaddress.getText().toString(),
+                                editphone.getText().toString());
 
                 }
-
             }
         });
 
@@ -115,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
             progressDialog.setMessage("Please Wait...");
             progressDialog.setCancelable(false);
             progressDialog.show();
-
         }
 
         @Override
@@ -128,31 +123,23 @@ public class MainActivity extends AppCompatActivity {
             String age = args[3];
             String fullname = args[2];
 
-
             ArrayList params = new ArrayList();
             params.add(new BasicNameValuePair("email", email));
             params.add(new BasicNameValuePair("password", password));
-            if(fullname.length()>0)
-                params.add(new BasicNameValuePair("fullname", fullname));
-            if(age.length()>0)
-                params.add(new BasicNameValuePair("age", age));
-            if(address.length()>0)
-                params.add(new BasicNameValuePair("address", address));
-            if(phone.length()>0)
-                params.add(new BasicNameValuePair("phone", phone));
+            params.add(new BasicNameValuePair("fullname", fullname));
+            params.add(new BasicNameValuePair("age", age));
+            params.add(new BasicNameValuePair("address", address));
+            params.add(new BasicNameValuePair("phone", phone));
+
+                JSONObject json = jsonParser.makeHttpRequest(URL, "POST", params);
 
 
-            JSONObject json = jsonParser.makeHttpRequest(URL, "POST", params);
+                return json;
 
-
-            return json;
 
         }
-
         protected void onPostExecute(JSONObject result) {
 
-            // dismiss the dialog once product deleted
-            //Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
             progressDialog.dismiss();
             try {
                 if (result != null) {
@@ -165,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(getApplicationContext(),result.getString("message"),Toast.LENGTH_LONG).show();                    }
                 } else {
-                    Toast.makeText(getApplicationContext(),"Unable to retrieve any data from server", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Somrthing went wrong!!", Toast.LENGTH_LONG).show();
 
                 }
 
