@@ -18,8 +18,8 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="1784dp"
+            android:layout_width="350dp"
+            android:layout_height="3940dp"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="25dp"
@@ -67,6 +67,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do1" />
+
             <TextView
                 android:id="@+id/textView23"
                 android:layout_width="match_parent"
@@ -85,6 +91,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="265dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do2" />
+
             <TextView
                 android:id="@+id/textView24"
                 android:layout_width="match_parent"
@@ -100,7 +112,7 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView23"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
             <TextView
                 android:id="@+id/textView25"
@@ -117,18 +129,150 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView23"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="289dp"
+                android:layout_height="192dp"
+                app:srcCompat="@drawable/do3" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have extra cell phone batteries."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="280dp"
+                android:layout_height="245dp"
+                app:srcCompat="@drawable/do4" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do include your pets in your plan. If you must leave your home in an emergency, take your pets."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do keep a wallet-sized list of your contact information and meeting places with you at all times."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do keep cash on hand."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do review your plan and kit seasonally"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do stop and think and use common sense in an emergency."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do store water and food for an extended period of time."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dont"
+                android:layout_marginTop="30dp"/>
 
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aclonica"
+                android:layout_marginTop="30dp"
                 android:paddingLeft="1dp"
                 android:paddingTop="10dp"
                 android:paddingRight="1dp"
                 android:paddingBottom="10dp"
-                android:text="Condition of use"
+                android:text="Don't"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="25sp"
@@ -144,7 +288,7 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:paddingTop="10dp"
                 android:paddingRight="1dp"
                 android:paddingBottom="10dp"
-                android:text="You may not use our app if you violate these terms and policies."
+                android:text="Don’t use the emergency app unless there is a life-threatening emergency. "
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="25sp"
@@ -161,7 +305,7 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:paddingTop="10dp"
                 android:paddingRight="1dp"
                 android:paddingBottom="10dp"
-                android:text="Push only the button and make sure before you confirm the submission of your concerns, the information is accurate."
+                android:text="Don’t drink, eat, or smoke anything during an emergency from an unknown explosion until you are out of harm’s way."
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="25sp"
@@ -177,7 +321,8 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:paddingTop="10dp"
                 android:paddingRight="1dp"
                 android:paddingBottom="10dp"
-                android:text="Don't create a fake accounts."
+                android:text="Don’t go anywhere except to your designated meeting place after escaping from an emergency scene. You do not want fire or police personnel risking their lives
+searching for you because they don’t know you got out safely."
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="25sp"
@@ -193,7 +338,7 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:paddingTop="10dp"
                 android:paddingRight="1dp"
                 android:paddingBottom="10dp"
-                android:text="Termination of user accounts if found a lot of violations."
+                android:text="Don’t go to a shelter without your pets."
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="25sp"
@@ -209,13 +354,77 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:paddingTop="10dp"
                 android:paddingRight="1dp"
                 android:paddingBottom="10dp"
-                android:text="If found creating a fake account and using it in our app, deletion of the user accounts will be done."
+                android:text="Don’t go to any emergency scene."
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t leave behind any food, water, medicine, or clothing you might need when going to a shelter."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t leave your pets behind."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t make assumptions."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t panic. In an emergency take a moment to think before you act."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35"/>
 
 
         </LinearLayout>
