@@ -50,7 +50,7 @@ public class Register {
                 response = br.readLine();
             }
             else {
-                response="Error Registering";
+                response="Error in sending data";
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -77,33 +77,3 @@ public class Register {
     }
 }
 
-       /* mAuth.createUserWithEmailAndPassword(email,pswd)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-
-                        if (task.isSuccessful()) {
-                            User user = new User(name,email,age,address,phone);
-
-                            FirebaseDatabase.getInstance().getReference("Users")
-                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful()) {
-                                        Toast.makeText(Register.this, "User registered!", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.GONE);
-
-                                        //redirect to layout
-                                    } else {
-                                        Toast.makeText(Register.this, "Failed to register user! Try again!", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.GONE);
-                                    }
-                                }
-                            });
-                        } else {
-                            Toast.makeText(Register.this, "Failed to register user!", Toast.LENGTH_LONG).show();
-                            progressBar.setVisibility(View.GONE);
-                        }
-                    }
-                });*/

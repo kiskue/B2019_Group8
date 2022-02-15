@@ -13,13 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-
         tools:context=".ui.about.About">
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="2638dp"
+            android:layout_height="2590dp"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingLeft="25dp"
@@ -29,13 +28,14 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="190dp"
                 android:background="@drawable/checkboxsize"
                 android:fontFamily="@font/aldrich"
                 android:paddingLeft="25dp"
-                android:paddingTop="30dp"
+                android:paddingTop="20dp"
                 android:paddingRight="25dp"
                 android:paddingBottom="20dp"
+                android:textStyle="bold"
                 android:text="Welcome to the Subdivision Emergency App! "
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
@@ -82,6 +82,7 @@ and emergencies. "
                 android:paddingRight="25dp"
                 android:paddingBottom="20dp"
                 android:text="Quotes"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="23sp"
@@ -110,6 +111,7 @@ and emergencies. "
 
             <TextView
                 android:id="@+id/textView10"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -118,7 +120,7 @@ and emergencies. "
                 android:paddingLeft="25dp"
                 android:paddingTop="20dp"
                 android:paddingRight="25dp"
-                android:paddingBottom="20dp"
+                android:paddingBottom="15dp"
                 android:text="Terms and Condition"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
@@ -151,6 +153,7 @@ user to provide fast and efficient service."
 
             <TextView
                 android:id="@+id/textView12"
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -170,6 +173,7 @@ user to provide fast and efficient service."
 
             <TextView
                 android:id="@+id/textView13"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -191,6 +195,8 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView14"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -209,6 +215,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView15"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -228,6 +235,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView20"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -246,6 +254,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView21"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -263,6 +272,8 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView16"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -281,6 +292,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView17"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -300,6 +312,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView18"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -318,6 +331,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView19"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"
@@ -336,6 +350,7 @@ To help themselves as human being with their safety."
 
             <TextView
                 android:id="@+id/textView22"
+                android:layout_marginBottom="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/checkboxsize"

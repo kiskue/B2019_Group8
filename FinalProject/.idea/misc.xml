@@ -30,7 +30,7 @@
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/fragment_about.xml" value="0.1" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/fragment_gallery.xml" value="0.24048913043478262" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/fragment_home.xml" value="0.24048913043478262" />
-        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/fragment_logout.xml" value="0.24048913043478262" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/fragment_logout.xml" value="0.264" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/fragment_slideshow.xml" value="0.24048913043478262" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/layout/nav_header_home2.xml" value="0.24048913043478262" />
@@ -39,6 +39,8 @@
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_foreground.xml" value="0.15208333333333332" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_foreground_round.xml" value="0.15208333333333332" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.15208333333333332" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/mipmap-anydpi-v26/ic_logo1.xml" value="0.14739583333333334" />
+        <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/mipmap-anydpi-v26/ic_logo1_round.xml" value="0.14739583333333334" />
         <entry key="..\:/B2019_Group8/B2019_Group8/FinalProject/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" value="0.15208333333333332" />
         <entry key="..\:/Users/Win10/Documents/GitHub/B2019_Group8/FinalProject/app/src/main/res/layout/activity_about.xml" value="0.19" />
         <entry key="..\:/Users/Win10/Documents/GitHub/B2019_Group8/FinalProject/app/src/main/res/layout/activity_main3.xml" value="0.20416666666666666" />

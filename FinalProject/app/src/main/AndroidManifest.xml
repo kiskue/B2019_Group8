@@ -20,9 +20,6 @@
             android:exported="false"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".ForgotPassword"
-            android:exported="false" />
-        <activity
             android:name=".Register"
             android:exported="false"
             tools:ignore="Instantiatable" />
