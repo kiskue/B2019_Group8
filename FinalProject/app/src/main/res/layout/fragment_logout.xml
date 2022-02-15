@@ -18,19 +18,14 @@
             android:paddingLeft="25dp"
             android:paddingRight="25dp">
 
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="500dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="200dp"
-                android:src="@drawable/dos1" />
+
 
             <TextView
                 android:background="@drawable/checkboxsize"
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="200dp"
                 android:fontFamily="@font/aldrich"
                 android:paddingLeft="25dp"
                 android:paddingTop="30dp"
@@ -44,6 +39,13 @@
                 app:layout_constraintHorizontal_bias="0.612"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dos1" />
 
             <TextView
                 android:fontFamily="@font/aldrich"
@@ -92,7 +94,7 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
 
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_width="265dp"
+                android:layout_width="285dp"
                 android:layout_height="184dp"
                 app:srcCompat="@drawable/do2" />
 
@@ -115,6 +117,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do10" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -136,8 +144,8 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
 
             <ImageView
                 android:id="@+id/imageView13"
-                android:layout_width="289dp"
-                android:layout_height="192dp"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
                 app:srcCompat="@drawable/do3" />
 
             <TextView
@@ -160,8 +168,8 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
 
             <ImageView
                 android:id="@+id/imageView14"
-                android:layout_width="280dp"
-                android:layout_height="245dp"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
                 app:srcCompat="@drawable/do4" />
 
             <TextView
@@ -182,6 +190,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do5" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -199,6 +213,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do11" />
 
             <TextView
                 android:fontFamily="@font/aldrich"
@@ -218,6 +238,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="373dp"
+                android:layout_height="307dp"
+                app:srcCompat="@drawable/do6" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -236,6 +262,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do7" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -253,6 +285,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do8" />
 
             <TextView
                 android:fontFamily="@font/aldrich"
@@ -273,11 +311,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
             <ImageView
-                android:id="@+id/imageView12"
+                android:id="@+id/imageView20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/dont" />
+                app:srcCompat="@drawable/do9" />
+
+
 
             <TextView
                 android:background="@drawable/checkboxsize"
@@ -298,6 +337,13 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/dont" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -317,6 +363,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
 
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="317dp"
+                app:srcCompat="@drawable/dont1" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -334,6 +386,12 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dont2" />
 
             <TextView
                 android:fontFamily="@font/aldrich"
@@ -354,6 +412,12 @@ searching for you because they don’t know you got out safely."
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="wrap_content"
+                android:layout_height="291dp"
+                app:srcCompat="@drawable/dont3" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -371,6 +435,12 @@ searching for you because they don’t know you got out safely."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dont4" />
 
             <TextView
                 android:fontFamily="@font/aldrich"
@@ -390,6 +460,12 @@ searching for you because they don’t know you got out safely."
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="412dp"
+                app:srcCompat="@drawable/dont5" />
+
             <TextView
                 android:fontFamily="@font/aldrich"
                 android:background="@drawable/checkboxsize"
@@ -407,6 +483,12 @@ searching for you because they don’t know you got out safely."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="351dp"
+                android:layout_height="438dp"
+                app:srcCompat="@drawable/dont6" />
 
             <TextView
                 android:fontFamily="@font/aldrich"
@@ -461,6 +543,8 @@ searching for you because they don’t know you got out safely."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+
 
 
         </LinearLayout>
