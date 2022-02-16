@@ -27,7 +27,7 @@
                 android:id="@+id/logo"
                 android:layout_width="457dp"
                 android:layout_height="323dp"
-                app:srcCompat="@drawable/logo1" />
+                app:srcCompat="@drawable/logo" />
 
             <TextView
                 android:id="@+id/text12"
