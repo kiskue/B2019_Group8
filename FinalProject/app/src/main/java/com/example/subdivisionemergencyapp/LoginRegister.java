@@ -23,7 +23,7 @@ public class LoginRegister extends AppCompatActivity {
     ProgressDialog progressDialog;
     EditText editfullName, editemail, editpassword, editphone, editaddress, editage;
     Button btnSignIn, btnRegister;
-    TextView txtheader;
+    TextView txtheader,txtsign_in;
     ImageView imageView;
     private  String URL= "https://b2019cc107group8.000webhostapp.com/index.php";
 
@@ -37,7 +37,8 @@ public class LoginRegister extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loginregister);
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         editfullName = (EditText) findViewById(R.id.edtFullName);
         editemail = (EditText) findViewById(R.id.edtRegEmail);
         editpassword = (EditText) findViewById(R.id.edtRegPassword);
@@ -48,7 +49,14 @@ public class LoginRegister extends AppCompatActivity {
         imageView = findViewById(R.id.logo);
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
         btnRegister=(Button)findViewById(R.id.btnRegister);
-
+        txtsign_in = findViewById(R.id.txtsign_in);
+        txtsign_in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent = new Intent(LoginRegister.this, LoginRegister.class);
+               startActivity(intent);
+            }
+        });
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,6 +80,7 @@ public class LoginRegister extends AppCompatActivity {
                     btnSignIn.setVisibility(View.GONE);
                     txtheader.setVisibility(View.VISIBLE);
                     imageView.setVisibility(View.GONE);
+                    txtsign_in.setVisibility(View.VISIBLE);
                     btnRegister.setText("CREATE ACCOUNT");
                 }
                 else {
@@ -83,6 +92,7 @@ public class LoginRegister extends AppCompatActivity {
                     editphone.setVisibility(View.GONE);
                     imageView.setVisibility(View.VISIBLE);
                     txtheader.setVisibility(View.GONE);
+                    txtsign_in.setVisibility(View.GONE);
                     btnSignIn.setVisibility(View.VISIBLE);
 
                     i = 0;

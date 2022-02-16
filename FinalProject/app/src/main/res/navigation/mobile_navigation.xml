@@ -13,14 +13,14 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.subdivisionemergencyapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.example.subdivisionemergencyapp.ui.hotline.HotlineFragment"
+        android:label="@string/menu_hotline"
+        tools:layout="@layout/fragment_hotline" />
 
     <fragment
     android:id="@+id/nav_logout"
     android:name="com.example.subdivisionemergencyapp.ui.dos.DosFragment"
-    android:label="@string/menu_logout"
+    android:label="@string/menu_dos"
     tools:layout="@layout/fragment_dos" />
 
     <fragment

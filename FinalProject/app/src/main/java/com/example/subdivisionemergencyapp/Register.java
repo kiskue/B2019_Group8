@@ -1,6 +1,4 @@
 package com.example.subdivisionemergencyapp;
-
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -12,12 +10,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
-
 import javax.net.ssl.HttpsURLConnection;
 
-/**
- * Created by Jatinder Bal on 12/27/2018.
- */
 public class Register {
     public String sendPostRequest(String requestURL,
                                   HashMap<String, String> postDataParams) {

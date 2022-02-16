@@ -10,8 +10,8 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_profile"
-            android:title="@string/menu_profile" />
+            android:icon="@drawable/ic_hotline"
+            android:title="@string/menu_hotline" />
 
             <item
                 android:id="@+id/nav_about"
@@ -19,8 +19,8 @@
                 android:title="@string/menu_about" />
             <item
                 android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_accomplishment"
-                android:title="@string/menu_logout" />
+                android:icon="@drawable/ic_accomplisment"
+                android:title="@string/menu_dos" />
 </group>
 
         </menu>
