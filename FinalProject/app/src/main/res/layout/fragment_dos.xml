@@ -315,7 +315,7 @@ Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/do9" />
-            
+
 
             <TextView
                 android:id="@+id/textView14"
