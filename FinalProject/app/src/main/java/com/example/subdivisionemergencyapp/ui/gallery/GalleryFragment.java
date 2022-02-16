@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.subdivisionemergencyapp.MainActivity;
+import com.example.subdivisionemergencyapp.LoginRegister;
 import com.example.subdivisionemergencyapp.R;
 import com.example.subdivisionemergencyapp.databinding.FragmentGalleryBinding;
 
@@ -28,7 +28,7 @@ public class GalleryFragment extends Fragment {
       button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-          Intent intent = new Intent(getActivity(), MainActivity.class);
+          Intent intent = new Intent(getActivity(), LoginRegister.class);
           startActivity(intent);
           finish();
         }

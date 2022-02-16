@@ -27,7 +27,7 @@
                 android:id="@+id/logo"
                 android:layout_width="457dp"
                 android:layout_height="323dp"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/logo1" />
 
             <TextView
                 android:id="@+id/text12"
@@ -170,11 +170,6 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-
-
-
-
     </RelativeLayout>
-
 </ScrollView>
 
