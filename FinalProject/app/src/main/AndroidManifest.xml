@@ -16,10 +16,6 @@
         <uses-library android:name="org.apache.http.legacy"
             android:required="false" />
         <activity
-            android:name=".User"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-        <activity
             android:name=".Register"
             android:exported="false"
             tools:ignore="Instantiatable" />
@@ -36,7 +32,7 @@
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginRegister"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

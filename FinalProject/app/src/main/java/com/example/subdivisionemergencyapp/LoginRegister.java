@@ -11,16 +11,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginRegister extends AppCompatActivity {
 
 
     ProgressDialog progressDialog;
@@ -107,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPreExecute() {
 
             super.onPreExecute();
-            progressDialog = new ProgressDialog(MainActivity.this);
+            progressDialog = new ProgressDialog(LoginRegister.this);
             progressDialog.setMessage("Please Wait...");
             progressDialog.setCancelable(false);
             progressDialog.show();
@@ -145,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                 if (result != null) {
                     Toast.makeText(getApplicationContext(),result.getString("message"),Toast.LENGTH_LONG).show();
                     if (result.getString("message").equals("Successfully logged in")) {
-                        Toast.makeText(MainActivity.this, "Successfully logged in", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginRegister.this, "Successfully logged in", Toast.LENGTH_LONG).show();
                         Intent intent_name = new Intent();
                         intent_name.setClass(getApplicationContext(), MainActivity1.class);
                         startActivity(intent_name);
