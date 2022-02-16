@@ -16,9 +16,6 @@ import com.example.subdivisionemergencyapp.databinding.FragmentGalleryBinding;
 
 
 public class GalleryFragment extends Fragment {
-  //  private FirebaseUser user;
- //   private DatabaseReference reference;
-    private String userID;
     private Button button;
     private GalleryViewModel galleryViewModel;
     private FragmentGalleryBinding binding;
@@ -31,7 +28,6 @@ public class GalleryFragment extends Fragment {
       button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-          //  FirebaseAuth.getInstance().signOut();
           Intent intent = new Intent(getActivity(), MainActivity.class);
           startActivity(intent);
           finish();
@@ -43,55 +39,3 @@ public class GalleryFragment extends Fragment {
       return view;
     }
 }
-/*
-        user = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReferenc`e("Users");
-        userID = user.getUid();
-
-        final TextView nametextview = (TextView) view.findViewById(R.id.textname);
-        final TextView emailtextview = (TextView) view.findViewById(R.id.textemail);
-        final TextView agetextview = (TextView) view.findViewById(R.id.textage);
-        final TextView phonetextview = (TextView) view.findViewById(R.id.textphone);
-        final TextView addresstextview = (TextView) view.findViewById(R.id.textaddress);
-
-        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                profile userprofile = snapshot.getValue(profile.class);
-
-
-                if (userprofile != null){
-                    String fullname = userprofile.fullName;
-                    String email = userprofile.email;
-                    String age = userprofile.age;
-                    String phone = userprofile.phone;
-                    String address = userprofile.address;
-
-                    nametextview.setText(fullname);
-                    emailtextview.setText(email);
-                    agetextview.setText(age);
-                    phonetextview.setText(phone);
-                    addresstextview.setText(address);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(getActivity(), "Something went wrong try again!", Toast.LENGTH_SHORT).show();
-            }
-        });
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.textaddress;
-
-        return view;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;*/

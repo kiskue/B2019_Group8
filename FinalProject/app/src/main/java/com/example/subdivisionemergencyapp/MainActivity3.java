@@ -1,5 +1,4 @@
 package com.example.subdivisionemergencyapp;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -8,9 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.HashMap;
 
 public class MainActivity3 extends AppCompatActivity {
@@ -51,11 +48,10 @@ public class MainActivity3 extends AppCompatActivity {
 
                 if (email.equals("")) {
                     Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
-                 else if( fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals("")) {
+                else if( fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals("")) {
                     Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
-
             }
         });
 
@@ -74,20 +70,14 @@ public class MainActivity3 extends AppCompatActivity {
             Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
         else if(fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals(""))  {
             Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
-       }
-       else {
-
-
+        } else {
             register(email,fire,floods,robbery,earthquake,bomb_threat,need_ambulance,lost_family,personal_threat);
-     }
+        }
     }
-
     private void register(String email, String fire, String floods, String robbery, String earthquake,String bomb_threat, String need_ambulance, String lost_family, String personal_threat ) {
         class RegisterUsers  extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             Register ruc = new Register();
-
-
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
@@ -101,7 +91,6 @@ public class MainActivity3 extends AppCompatActivity {
                 mProgressDialog.setProgressPercentFormat(null);
                 mProgressDialog.show();
             }
-
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
@@ -110,12 +99,10 @@ public class MainActivity3 extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity3.this,MainActivity1.class);
                 startActivity(intent);
             }
-
             @Override
             protected String doInBackground(String... params) {
 
                 HashMap<String, String> data = new HashMap<String, String>();
-
 
                 data.put("email",params[0]);
                 data.put("fire", params[1]);
@@ -127,13 +114,10 @@ public class MainActivity3 extends AppCompatActivity {
                 data.put("lost_family", params[7]);
                 data.put("personal_threat", params[8]);
 
-
                 String result = ruc.sendPostRequest(INSERTDATA_URL, data);
-
                 return result;
             }
         }
-
         RegisterUsers ru = new RegisterUsers();
         ru.execute(email,fire,floods,robbery,earthquake,bomb_threat,need_ambulance,lost_family,personal_threat);
     }
