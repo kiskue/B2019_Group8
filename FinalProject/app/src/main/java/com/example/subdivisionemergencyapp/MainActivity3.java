@@ -51,7 +51,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                 if (email.equals("")) {
                     Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
-                 else if( fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals("")) {
+                else if( fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals("")) {
                     Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
@@ -74,12 +74,12 @@ public class MainActivity3 extends AppCompatActivity {
             Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
         else if(fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals(""))  {
             Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
-       }
-       else {
+        }
+        else {
 
 
             register(email,fire,floods,robbery,earthquake,bomb_threat,need_ambulance,lost_family,personal_threat);
-     }
+        }
     }
 
     private void register(String email, String fire, String floods, String robbery, String earthquake,String bomb_threat, String need_ambulance, String lost_family, String personal_threat ) {
