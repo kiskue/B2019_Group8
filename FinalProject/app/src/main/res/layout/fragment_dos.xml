@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:alpha="0.8">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="3945dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+
+
+            <TextView
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/aldrich"
+                android:paddingLeft="25dp"
+                android:paddingTop="30dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="20dp"
+                android:text="Do's"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dos1" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:id="@+id/textView7"
+                android:background="@drawable/checkboxsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do communicate to your family, friends, co-workers and neighbors about emergency preparedness. "
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do1" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have an emergency “go” kit ready. Collecting flashlights, batteries, first aid kits, clocks, radio, important papers in the midst of an emergency is not a good idea.
+Most people have gym bags, fishing boxes, why not an emergency “go” kit?"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do2" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have at least 1 out-of-state contact. If circuits are busy you stand a better chance of reaching someone further away."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do10" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have enough medicine."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do3" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do have extra cell phone batteries."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do4" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do include your pets in your plan. If you must leave your home in an emergency, take your pets."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="285dp"
+                android:layout_height="184dp"
+                app:srcCompat="@drawable/do5" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do keep a wallet-sized list of your contact information and meeting places with you at all times."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do11" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do keep cash on hand."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="373dp"
+                android:layout_height="307dp"
+                app:srcCompat="@drawable/do6" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do review your plan and kit seasonally"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do7" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do stop and think and use common sense in an emergency."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do8" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Do store water and food for an extended period of time."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/do9" />
+
+
+
+            <TextView
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/aldrich"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don't"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/dont" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t use the emergency app unless there is a life-threatening emergency. "
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="317dp"
+                app:srcCompat="@drawable/dont1" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t drink, eat, or smoke anything during an emergency from an unknown explosion until you are out of harm’s way."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dont2" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t go anywhere except to your designated meeting place after escaping from an emergency scene. You do not want fire or police personnel risking their lives
+searching for you because they don’t know you got out safely."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="wrap_content"
+                android:layout_height="291dp"
+                app:srcCompat="@drawable/dont3" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t go to a shelter without your pets."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dont4" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t go to any emergency scene."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="412dp"
+                app:srcCompat="@drawable/dont5" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t leave behind any food, water, medicine, or clothing you might need when going to a shelter."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="351dp"
+                android:layout_height="438dp"
+                app:srcCompat="@drawable/dont6" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t leave your pets behind."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="wrap_content"
+                android:layout_height="296dp"
+                app:srcCompat="@drawable/dont7" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t make assumptions."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="wrap_content"
+                android:layout_height="389dp"
+                app:srcCompat="@drawable/dont8" />
+
+            <TextView
+                android:fontFamily="@font/aldrich"
+                android:background="@drawable/checkboxsize"
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingTop="10dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="10dp"
+                android:text="Don’t panic. In an emergency take a moment to think before you act."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="344dp"
+                android:layout_height="373dp"
+                app:srcCompat="@drawable/dont9" />
+
+
+        </LinearLayout>
+
+</ScrollView>

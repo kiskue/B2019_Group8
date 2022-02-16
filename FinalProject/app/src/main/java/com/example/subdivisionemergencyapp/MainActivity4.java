@@ -22,14 +22,12 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-
         txtname = (EditText)findViewById(R.id.editTextname);
         txtaddress = (EditText)findViewById(R.id.editTextcity);
         txtConcern = (EditText)findViewById(R.id.editTextstate);
         txtNeedforcencern = (EditText)findViewById(R.id.editTextcountry);
 
         insertdata = (Button)findViewById(R.id.buttoninsertdata);
-
         insertdata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +45,6 @@ public class MainActivity4 extends AppCompatActivity {
                     Toast.makeText(MainActivity4.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
-
             }
         });
 
@@ -66,20 +63,14 @@ public class MainActivity4 extends AppCompatActivity {
         }
         else if (Concern.equals("")||Needforconcern.equals("")){
             Toast.makeText(MainActivity4.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
-        }
-        else {
-
-
+        } else {
             register(Name, address, Concern, Needforconcern);
         }
     }
-
     private void register(String Name, String address , String Concern, String Needforconcern ) {
         class RegisterUsers  extends AsyncTask<String, Void, String> {
             ProgressDialog loading;
             Register ruc = new Register();
-
-
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
@@ -93,7 +84,6 @@ public class MainActivity4 extends AppCompatActivity {
                 mProgressDialog.setProgressPercentFormat(null);
                 mProgressDialog.show();
             }
-
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
@@ -102,25 +92,20 @@ public class MainActivity4 extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity4.this,MainActivity1.class);
                 startActivity(intent);
             }
-
             @Override
             protected String doInBackground(String... params) {
 
                 HashMap<String, String> data = new HashMap<String, String>();
-
 
                 data.put("Name",params[0]);
                 data.put("address", params[1]);
                 data.put("Concern", params[2]);
                 data.put("Needforconcern", params[3]);
 
-
                 String result = ruc.sendPostRequest(INSERTDATA_URL, data);
-
                 return result;
             }
         }
-
         RegisterUsers ru = new RegisterUsers();
         ru.execute(Name, address,Concern,Needforconcern);
     }
