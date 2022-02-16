@@ -36,7 +36,7 @@ public class LoginRegister extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_loginregister);
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         editfullName = (EditText) findViewById(R.id.edtFullName);
         editemail = (EditText) findViewById(R.id.edtRegEmail);

@@ -8,7 +8,7 @@
 "   android:alpha="0.8"
     android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
     android:orientation="vertical"
-    tools:context=".MainActivity3">
+    tools:context=".Emergency">
 
 
     <ImageView
@@ -314,10 +314,9 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintVertical_bias="0.998" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -332,5 +331,27 @@
         app:srcCompat="@drawable/threat"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="254dp"
+        android:layout_height="65dp"
+        android:background="@drawable/checkboxsize"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="1dp"
+        android:paddingTop="5dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="5dp"
+        android:text="Type 'NEED' and choose what type of emergency you need "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

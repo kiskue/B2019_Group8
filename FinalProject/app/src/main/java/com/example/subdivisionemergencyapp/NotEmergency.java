@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.HashMap;
 
-public class MainActivity4 extends AppCompatActivity {
+public class NotEmergency extends AppCompatActivity {
 
     EditText txtname,txtConcern ,txtaddress, txtNeedforcencern ;
     Button insertdata;
@@ -20,7 +20,7 @@ public class MainActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_notemergency);
 
         txtname = (EditText)findViewById(R.id.editTextname);
         txtaddress = (EditText)findViewById(R.id.editTextcity);
@@ -36,13 +36,13 @@ public class MainActivity4 extends AppCompatActivity {
                 String Concern = txtConcern.getText().toString().trim().toLowerCase();
                 String Needforconcern = txtNeedforcencern.getText().toString().trim().toLowerCase();
                 if(Name.equals("")){
-                    Toast.makeText(MainActivity4.this, "Please Enter Fullname!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NotEmergency.this, "Please Enter Fullname!!", Toast.LENGTH_SHORT).show();
                 }
                 else if(address.equals("")){
-                    Toast.makeText(MainActivity4.this, "Please Enter Address!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NotEmergency.this, "Please Enter Address!!", Toast.LENGTH_SHORT).show();
                 }
                 else if (Concern.equals("")||Needforconcern.equals("")){
-                    Toast.makeText(MainActivity4.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NotEmergency.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
             }
@@ -56,13 +56,13 @@ public class MainActivity4 extends AppCompatActivity {
         String Needforconcern = txtNeedforcencern.getText().toString().trim().toLowerCase();
 
         if(Name.equals("")){
-            Toast.makeText(MainActivity4.this, "Please Enter Fullname!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NotEmergency.this, "Please Enter Fullname!!", Toast.LENGTH_SHORT).show();
         }
         else if(address.equals("")){
-            Toast.makeText(MainActivity4.this, "Please Enter Address!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NotEmergency.this, "Please Enter Address!!", Toast.LENGTH_SHORT).show();
         }
         else if (Concern.equals("")||Needforconcern.equals("")){
-            Toast.makeText(MainActivity4.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(NotEmergency.this, "Please Enter Your Concern!!", Toast.LENGTH_SHORT).show();
         } else {
             register(Name, address, Concern, Needforconcern);
         }
@@ -74,7 +74,7 @@ public class MainActivity4 extends AppCompatActivity {
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                mProgressDialog = new ProgressDialog(MainActivity4.this);
+                mProgressDialog = new ProgressDialog(NotEmergency.this);
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 mProgressDialog.setMessage(getString(R.string.progress_detail));
                 mProgressDialog.setIndeterminate(true);
@@ -89,7 +89,7 @@ public class MainActivity4 extends AppCompatActivity {
                 super.onPostExecute(s);
                 mProgressDialog.dismiss();
                 Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity4.this,MainActivity1.class);
+                Intent intent = new Intent(NotEmergency.this,MainActivity1.class);
                 startActivity(intent);
             }
             @Override

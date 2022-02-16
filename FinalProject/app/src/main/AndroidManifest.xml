@@ -23,10 +23,10 @@
             android:name=".MainActivity1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".NotEmergency"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".Emergency"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"

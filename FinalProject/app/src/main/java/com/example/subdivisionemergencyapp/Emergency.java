@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.HashMap;
 
-public class MainActivity3 extends AppCompatActivity {
+public class Emergency extends AppCompatActivity {
     EditText txtemail,boxfire,boxearthquake,boxfloods,boxrobbery,boxlosschild,boxrabies,boxneedambulance, boxbomb_threat,boxpersonal_threat;
     Button confirm_button;
     ProgressDialog mProgressDialog;
@@ -19,7 +19,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_emergency);
 
         confirm_button = findViewById(R.id.confirm_button);
         boxfire = findViewById(R.id.fire);
@@ -47,9 +47,9 @@ public class MainActivity3 extends AppCompatActivity {
                 String personal_threat = boxpersonal_threat.getText().toString().trim().toLowerCase();
 
                 if (email.equals("")) {
-                    Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
+                    Toast.makeText(Emergency.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
                 else if( fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals("")) {
-                    Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Emergency.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
                 }
                 InsertData();
             }
@@ -67,9 +67,9 @@ public class MainActivity3 extends AppCompatActivity {
         String lost_family = boxlosschild.getText().toString().trim().toLowerCase();
         String personal_threat = boxpersonal_threat.getText().toString().trim().toLowerCase();
         if (email.equals("")) {
-            Toast.makeText(MainActivity3.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
+            Toast.makeText(Emergency.this, "Enter Email!!", Toast.LENGTH_SHORT).show();}
         else if(fire.equals("") && floods.equals("") && robbery.equals("") && earthquake.equals("") && bomb_threat.equals("") && need_ambulance.equals("") && lost_family.equals("") && personal_threat.equals(""))  {
-            Toast.makeText(MainActivity3.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Emergency.this,"Please fill emergency!!", Toast.LENGTH_SHORT).show();
         } else {
             register(email,fire,floods,robbery,earthquake,bomb_threat,need_ambulance,lost_family,personal_threat);
         }
@@ -81,7 +81,7 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                mProgressDialog = new ProgressDialog(MainActivity3.this);
+                mProgressDialog = new ProgressDialog(Emergency.this);
                 mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 mProgressDialog.setMessage(getString(R.string.progress_detail));
                 mProgressDialog.setIndeterminate(true);
@@ -96,7 +96,7 @@ public class MainActivity3 extends AppCompatActivity {
                 super.onPostExecute(s);
                 mProgressDialog.dismiss();
                 Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity3.this,MainActivity1.class);
+                Intent intent = new Intent(Emergency.this,MainActivity1.class);
                 startActivity(intent);
             }
             @Override
